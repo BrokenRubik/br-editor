@@ -1,9 +1,9 @@
 {
   "name": "@brokenrubik/br-editor",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name br-editor src/index.js",
+    "build": "vue-cli-service build --target lib src/index.js",
     "lint": "vue-cli-service lint"
   },
   "files": [

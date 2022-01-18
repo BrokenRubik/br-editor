@@ -12,6 +12,7 @@ module.exports = {
     ],
 
     configureWebpack: {
+        entry: 'src/index.js',
         plugins: [
             // CKEditor needs its own plugin to be built using webpack.
             new CKEditorWebpackPlugin( {
