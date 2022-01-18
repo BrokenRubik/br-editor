@@ -1,12 +1,15 @@
 {
-  "name": "br-editor",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@brokenrubik/br-editor",
+  "version": "0.1.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name br-editor src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "dist/br-editor.umd.min.js",
   "dependencies": {
     "@ckeditor/ckeditor5-alignment": "^31.1.0",
     "@ckeditor/ckeditor5-autoformat": "^31.1.0",

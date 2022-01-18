@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import CKEditor from '@ckeditor/ckeditor5-vue';
 import DecoupledEditor from "@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor";
 
 import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment.js";
@@ -51,7 +52,10 @@ import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline.js";
 import Fullscreen from "../plugin/Fullscreen";
 
 export default {
-  name: "app",
+  name: "editor",
+  components: {
+    ckeditor: CKEditor.component
+  },
   data() {
     return {
       isReady: false,
