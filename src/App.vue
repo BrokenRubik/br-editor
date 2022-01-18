@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <button @click="show = !show">toggle</button>
+  <HelloWorld v-if="show" />
 </template>
 
 <script>
@@ -10,7 +11,10 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  }
+  },
+  data: () => ({
+    show: false
+  })
 }
 </script>
 

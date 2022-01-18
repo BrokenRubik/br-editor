@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import CKEditor from '@ckeditor/ckeditor5-vue';
+
+createApp(App).use(CKEditor).mount('#app')
